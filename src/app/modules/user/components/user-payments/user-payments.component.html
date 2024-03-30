@@ -9,29 +9,11 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-      <td>#1234</td>
-      <td>jan 10, 2023</td>
-      <td>25000 LKR</td>
-      <td>Master Program</td>
-    </tr>
-    <tr>
-      <td>#1234</td>
-      <td>jan 10, 2023</td>
-      <td>25000 LKR</td>
-      <td>Master Program</td>
-    </tr>
-    <tr>
-      <td>#1234</td>
-      <td>jan 10, 2023</td>
-      <td>25000 LKR</td>
-      <td>Master Program</td>
-    </tr>
-    <tr>
-      <td>#1234</td>
-      <td>jan 10, 2023</td>
-      <td>25000 LKR</td>
-      <td>Master Program</td>
+    <tr *ngFor="let temp of dataArr">
+      <td>{{temp?.transactionId}}</td>
+      <td>{{temp?.date}}</td>
+      <td>{{temp?.amount}}</td>
+      <td>{{temp?.programName}}</td>
     </tr>
     </tbody>
   </table>

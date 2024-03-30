@@ -8,20 +8,10 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-      <td>#1234</td>
-      <td>Java</td>
-      <td>Active</td>
-    </tr>
-    <tr>
-      <td>#1234</td>
-      <td>Java</td>
-      <td>Active</td>
-    </tr>
-    <tr>
-      <td>#1234</td>
-      <td>Java</td>
-      <td>Active</td>
+    <tr *ngFor="let temp of dataArr">
+      <td>{{temp?.id}}</td>
+      <td>{{temp?.name}}</td>
+      <td>{{temp?.status}}</td>
     </tr>
     </tbody>
   </table>
